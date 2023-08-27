@@ -98,3 +98,81 @@
 #prodetails .single-pro-details span {
 	line-height: 25px;
 }
+
+@media (max-width: 799px) {
+	#page-header {
+		height: 30vh;
+	}
+	#prodetails .single-pro-img {
+		width: 55%;
+		margin-right: 35px;
+	}
+
+	.single-pro-details h6 {
+		font-weight: 700;
+		font-size: 14px;
+	}
+
+	#prodetails .single-pro-details h4 {
+		padding: 30px 0 20px 0;
+	}
+
+	#prodetails .single-pro-details input {
+		width: 45px;
+		height: 40px;
+
+		padding-left: 0px;
+		margin-right: 10px;
+	}
+
+	#prodetails .single-pro-details button.normal {
+		padding: 13px 20px;
+	}
+
+	#product1 h2 {
+		font-size: 42px;
+	}
+
+	#prodetails .single-pro-details h4 {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 477px) {
+	#page-header h2 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	#page-header {
+		height: 20vh;
+	}
+	#prodetails {
+		flex-direction: column;
+	}
+
+	#prodetails .single-pro-img {
+		width: 100%;
+		margin-right: 0px;
+	}
+
+	#prodetails .single-pro-details {
+		width: 100%;
+	}
+
+	#prodetails .single-pro-details input {
+		width: 35px;
+		height: 35px;
+	}
+
+	#prodetails .single-pro-details button.normal {
+		padding: 10px 15px;
+	}
+
+	#product1 h2 {
+		font-size: 38px;
+	}
+
+	#pagination a {
+		padding: 10px 15px;
+	}
+}

@@ -1,0 +1,153 @@
+@import url("shop.css");
+
+#page-header {
+	background-image: url("img/about/banner.png");
+}
+
+#cart {
+	/* this is added when creen is in small screen device so table has a scroll so rather than decresing the width of table */
+	overflow-x: auto;
+}
+
+#cart table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	white-space: nowrap;
+}
+
+#cart table img {
+	width: 70px;
+}
+
+#cart table td:nth-child(1) {
+	width: 100px;
+	text-align: center;
+}
+
+#cart table td:nth-child(2),
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+	width: 150px;
+	text-align: center;
+}
+
+#cart table td:nth-child(3) {
+	width: 250px;
+	text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+	width: 60px;
+	padding: 10px 15px;
+	text-align: center;
+	outline: none;
+}
+
+#cart table thead {
+	border: 2px solid #e2e9e1;
+	border-left: none;
+	border-right: none;
+}
+
+#cart table thead td {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 13px;
+	padding: 18px 0;
+}
+
+#cart table tbody tr td {
+	padding-top: 15px;
+}
+
+#cart table tbody td {
+	font-size: 15px;
+}
+
+#cart-add {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#coupon {
+	width: 50%;
+	margin-bottom: 55px;
+}
+
+#coupon h3 {
+	padding-bottom: 15px;
+}
+
+#coupon input {
+	padding: 10px 20px;
+	outline: none;
+	width: 60%;
+	border: 2px solid #e2e9e1;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+#coupon button {
+	background-color: #088178;
+	color: #fff;
+	padding: 11px 25px;
+}
+
+#subtotal {
+	width: 50%;
+	margin-bottom: 30px;
+	border: 2px solid #e2e9e1;
+	border-radius: 8px;
+	padding: 30px;
+}
+
+#subtotal table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#subtotal table td {
+	width: 50%;
+	border: 1px solid #e2e9e1;
+	padding: 10px;
+	font: 13px;
+}
+
+#subtotal h3 {
+	margin-bottom: 20px;
+}
+
+#subtotal button {
+	background-color: #088178;
+	color: #fff;
+	padding: 15px 25px;
+}
+
+@media (max-width: 477px) {
+	#cart-add {
+		flex-direction: column;
+	}
+
+	#coupon {
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 40px;
+	}
+
+	#coupon input {
+		width: 74%;
+	}
+	#subtotal {
+		width: 100%;
+		padding: 20px;
+	}
+
+	#subtotal button {
+		padding: 12px 15px;
+	}
+}

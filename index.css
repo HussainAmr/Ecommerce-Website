@@ -547,6 +547,10 @@ footer .copyright {
 	.section-p1 {
 		padding: 40px 40px;
 	}
+
+	#header {
+		padding: 20px 40px;
+	}
 	#navbar {
 		display: flex;
 		flex-direction: column;
@@ -561,6 +565,7 @@ footer .copyright {
 		box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
 		padding: 80px 0 0 10px;
 		transition: 0.3s ease;
+		z-index: 10;
 	}
 
 	#navbar.active {
@@ -573,7 +578,7 @@ footer .copyright {
 	}
 
 	#navbar li a {
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	#mobile {
@@ -586,6 +591,24 @@ footer .copyright {
 		color: #1a1a1a;
 		padding-left: 30px;
 		cursor: pointer;
+	}
+
+	#mobile a i.active {
+		color: #088178;
+	}
+
+	#mobile a {
+		position: relative;
+	}
+
+	#mobile a i.active::after {
+		content: "";
+		width: 25%;
+		height: 2px;
+		background: #088178;
+		position: absolute;
+		bottom: -4px;
+		left: 32px;
 	}
 
 	#close {
@@ -665,7 +688,7 @@ footer .copyright {
 		margin: 20px 0;
 	}
 	#header {
-		padding: 10px 30px;
+		padding: 10px 20px;
 	}
 
 	#navbar {
@@ -708,8 +731,8 @@ footer .copyright {
 	}
 
 	#product1 .pro {
-		width: 100%;
-		padding: 20px;
+		width: 70%;
+		padding: 10px;
 	}
 
 	#product1 .pro .desc span {
